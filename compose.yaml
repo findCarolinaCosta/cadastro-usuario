@@ -1,0 +1,18 @@
+services:
+  cadastro-usuario:
+    build: .
+    ports:
+      - "${APP_PORT:-8080}:8080"
+    environment:
+      SPRING_APPLICATION_NAME: "${SPRING_APPLICATION_NAME:-cadastro-usuario}"
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=75.0"
+    init: true
+  testes-interface:
+    profiles: ["test"]
+    build:
+      context: .
+      dockerfile: Dockerfile.tests
+    environment:
+      APP_URL: "http://cadastro-usuario:8080"
+    depends_on:
+      - cadastro-usuario

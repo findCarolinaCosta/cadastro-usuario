@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro · Atividades práticas</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+<main class="mx-auto max-w-5xl px-6 py-20">
+    <p class="text-sm font-semibold uppercase tracking-widest text-teal-400">Framework para desenvolvimento de software</p>
+    <h1 class="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">Do primeiro acesso ao cadastro.</h1>
+    <p class="mt-6 max-w-2xl text-lg text-slate-300">Aplicação prática com Spring MVC, Thymeleaf, Tailwind CSS, ViaCEP e jQuery.</p>
+    <section class="mt-10 rounded-2xl border border-teal-800 bg-teal-950 p-6">
+        <h2 class="font-semibold text-teal-200">01 · Ambiente funcionando</h2>
+        <p class="mt-2 text-slate-300">Esta página foi renderizada pelo Spring MVC e Thymeleaf, no Tomcat embutido executado pelo Docker.</p>
+    </section>
+    <nav aria-label="Atividades" class="mt-6 grid gap-5 md:grid-cols-3">
+        <a href="/endereco" class="rounded-2xl bg-slate-900 p-6 ring-1 ring-slate-700 transition hover:ring-teal-400 focus-visible:outline-2 focus-visible:outline-teal-400"><span class="text-teal-400">02 · ViaCEP</span><h2 class="mt-3 text-xl font-semibold">Consultar endereço</h2><p class="mt-3 text-slate-400">Preencha o endereço automaticamente a partir do CEP.</p></a>
+        <a href="/cadastro" class="rounded-2xl bg-slate-900 p-6 ring-1 ring-slate-700 transition hover:ring-teal-400 focus-visible:outline-2 focus-visible:outline-teal-400"><span class="text-teal-400">03 · Spring MVC</span><h2 class="mt-3 text-xl font-semibold">Formulário de cadastro</h2><p class="mt-3 text-slate-400">Dados pessoais e endereço em um formulário responsivo.</p></a>
+        <a href="/cadastro-validado" class="rounded-2xl bg-slate-900 p-6 ring-1 ring-slate-700 transition hover:ring-teal-400 focus-visible:outline-2 focus-visible:outline-teal-400"><span class="text-teal-400">04 · jQuery</span><h2 class="mt-3 text-xl font-semibold">Validar cadastro</h2><p class="mt-3 text-slate-400">Confira campos obrigatórios, e-mail e confirmação de senha.</p></a>
+    </nav>
+</main>
+</body>
+</html>
